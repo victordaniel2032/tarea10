@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "uno dos tres"
+                "uno cinco siete"
+                "uno ocho seis"
+                "uno cuatro cuatro";
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            width: 700px;
+            height: 500px;
+            border: 2px solid black;
+        }
+
+        .uno { grid-area: uno; background-color: green; color: white; display: flex; justify-content: center; align-items: center; }
+        .dos { grid-area: dos; background-color: green; color: white; display: flex; justify-content: center; align-items: center; }
+        .tres { grid-area: tres; background-color: red; color: white; display: flex; justify-content: center; align-items: center; }
+        .cuatro { grid-area: cuatro; background-color: green; color: white; display: flex; justify-content: center; align-items: center; }
+        .cinco { grid-area: cinco; background-color: orange; color: white; display: flex; justify-content: center; align-items: center; }
+        .seis { grid-area: seis; background-color: orange; color: white; display: flex; justify-content: center; align-items: center; }
+        .siete { grid-area: siete; background-color: red; color: white; display: flex; justify-content: center; align-items: center; }
+        .ocho { grid-area: ocho; background-color: red; color: white; display: flex; justify-content: center; align-items: center; }
+
+        .box {
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" >
+    <div class="box uno">UNO</div>
+    <div class="box dos">DOS</div>
+    <div class="box tres">TRES</div>
+    <div class="box cuatro">CUATRO</div>
+    <div class="box cinco">CINCO</div>
+    <div class="box seis">SEIS</div>
+    <div class="box siete">SIETE</div>
+    <div class="box ocho">OCHO</div>
+</div>
+
+</body>
+</html>
